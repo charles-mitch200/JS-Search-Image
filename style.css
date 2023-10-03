@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 60px 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.search-input {
+  padding: 10px 20px;
+  width: 60%;
+  border: 1px solid lightgray;
+  max-width: 400px;
+  font-size: 18px;
+  border-radius: 0 0 6px rgba(0, 0, 0, 0.2);
+  color: #333;
+  border-radius: 5px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  color: #fff;
+  background: #138065;
+  cursor: pointer;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  border-radius: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.search-results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-result {
+  margin-bottom: 60px;
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  border-radius: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.search-result img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.search-result:hover img {
+  opacity: 0.8;
+}
+
+.search-result a {
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px;
+  color: #333;
+  display: block;
+}
+
+.show-more {
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  background: #008cba;
+  color: #fff;
+  font-size: 18px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .search-result {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-result {
+    width: 100%;
+  }
+}
